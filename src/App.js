@@ -47,10 +47,10 @@ function Table() {
     fetchData();
   }, []);
   return(
-    <div>
-      <table>
-      <thead>  
-        <tr>
+    <div class="back">
+      <table class="selectList">
+      <thead class="thead">  
+        <tr class="item">
           <th>ID</th>
           <th>Title</th>
           <th>Author</th>
@@ -58,9 +58,9 @@ function Table() {
           <th>description</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="selectListBody List">
         {data.map((row)=>(
-          <tr>
+          <tr class="item">
             <td>{row.id}</td>
             <td>{row.title}</td>
             <td>{row.author}</td>
