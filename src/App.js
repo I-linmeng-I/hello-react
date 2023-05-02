@@ -35,12 +35,12 @@ function Table() {
 
   useEffect(() => {
     async function fetchData() {
-      const { data: testList, error } = await supabase.from('testList').select('*');
+      const { data: testlist, error } = await supabase.from('testlist').select('*');
 
       if (error) {
         console.error(error);
       } else {
-        setData(testList);
+        setData(testlist);
       }
     }
 
